@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add some padding around the header */
+    background-color: #333; /* Dark background for header */
+    color: white; /* White text color */
+}
+
+header h1 a {
+    color: white; /* Logo link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav1 {
+    display: flex; /* Use flexbox for navigation */
+    align-items: center; /* Center items vertically */
+}
+
+#Search {
+    padding: 5px; /* Padding for search bar */
+    margin-right: 20px; /* Space between search and links */
+}
+
+.nav1 a {
+    color: white; /* Change link color to white for contrast */
+    text-decoration: none; /* Remove underline from links */
+    margin-left: 20px; /* Space between links */
+}
+
+.nav1 a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.outer-box {
+    width: 90%; /* Width of the outer box */
+    height: auto; /* Height adjusts based on content */
+    background-color: #c5bdbd; /* Light Coral */
+    padding: 25px; /* Space inside the outer box */
+    margin: 30px auto; /* Centering the box */
+    border: 1px solid #000000; /* Border color */
+}
+
+.inner-box {
+    width: auto; /* Full width of the outer box */
+    height: auto; /* Height adjusts based on content */
+    background-color: rgb(115, 115, 120); /* Gray color for inner box */
+    padding: 20px; /* Space inside the inner box */
+    text-align: center; /* Center text */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Space above button */
+}
+
+.smallBox {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 20px; /* Space between boxes */
+    padding: 15px;
+}
+
+.small-box {
+    flex: 1; /* Allow boxes to grow equally */
+    min-width: 100px; /* Minimum width for each box */
+    height: 80px; /* Fixed height for each small box */
+    background-color: #aca99c; /* Color for small boxes */
+    display: flex; /* Center content inside each box */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    border-radius: 5px; /* Rounded corners for small boxes */
+    padding: 10px;
+}
+
+#categories {
+    padding: 10px;
+    text-align: center; /* Center categories title */
+}
+
+.categ {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 25px; /* Space between boxes */
+    padding: 25px;
+}
+
+.category-box {
+    flex: 1; /* Allow boxes to grow equally in their row */
+    min-width: 130px; /* Minimum width for category boxes */
+    height: 225px; /* Fixed height for category boxes */
+    background-color: #85857d; /* Khaki color for category boxes */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid #000000; /* Darker border for distinction */
+}
+
+.featured-products {
+    padding: 20px;
+    text-align: center; /* Center featured products title */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.footer-content {
+    margin: 10px 0; /* Margin for spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .product-grid {
+        flex-direction: column; /* Stack products vertically on small screens */
+        align-items: center; /* Center products */
+    }
+
+    .product-card {
+        width: 90%; /* Full width for product cards on small screens */
+    }
+
+    .smallBox {
+        flex-direction: column; /* Stack small boxes vertically on small screens */
+    }
+
+    .small-box {
+        width: 90%; /* Full width for small boxes on small screens */
+    }
+
+    .category-box {
+        width: 90%; /* Full width for category boxes on small screens */
+    }
+}
