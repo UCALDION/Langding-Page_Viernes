@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #222;
+    background-color: #222;  /* Updated to match index.html */
     color: white;
 }
 
@@ -205,11 +205,16 @@ header h1 a {
     height: auto;
 }
 
-footer {
-    background-color: #333;
+.footer {
+    background-color: #222; 
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
 }
 
 .social-media a {
@@ -223,6 +228,7 @@ footer {
 }
 
 .footer-content {
+    color: white;
     margin: 10px 0;
 }
 
