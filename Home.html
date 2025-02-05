@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Dionz - E-commerce Landing Page</title>
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="Home.html">Dionz</a></h1> <!-- LOGO di ko magawa gusto kong gawin na image ang logo  -->
+        </div>
+        <div class="nav1">
+            <input id="Search" type="text" placeholder="Search Products">
+            <a href="#" id="cartBtn"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            <a href="#" id="messageBtn"><i class="fa-solid fa-envelope"></i> Message</a>
+            <a href="profile.html"> 
+                <i class="fa-solid fa-user"></i> Profile 
+            </a>
+        </div>
+    </header>
+    <hr>
+    <div class="outer-box">
+        <div class="inner-box">
+            <h2>Welcome to Dionz</h2>
+            <p>Bumili ka na!!!</p>
+            <a class="cta-button" href="products.html">Shop Now</a>
+        </div>
+        <div class="smallBox">
+            <div class="small-box">Vouchers</div>
+            <div class="small-box">Health Care</div>
+            <div class="small-box">Beauty Buys</div>
+            <div class="small-box">Authenthic</div>
+            <div class="small-box">Malls</div>
+            <div class="small-box">Hobbies</div>
+            <div class="small-box">Gifts</div>
+            <div class="small-box">Partner Promos</div>
+        </div>
+    </div>
+
+    <h2 id="categories"> CATEGORIES <i class="fa-solid fa-tags"></i> </h2>
+    <div class="categ">
+        <div class="categ_Men">
+            <div class="category-box">Men's Apparel</div>
+            <div class="category-box">Toys & Games</div>
+            <div class="category-box">Mobile & Gadgets</div>
+            <div class="category-box">Sports Wear</div>
+        </div>
+        <div class="categ_Women">
+            <div class="category-box">Women Apparel</div>
+            <div class="category-box">Makeup & Fragnance</div>
+            <div class="category-box">Bags</div>
+            <div class="category-box">School Supplies</div>
+        </div>
+        <div class="categ_stuffs">
+            <div class="category-box">Babies & Kids</div>
+            <div class="category-box">Appliances</div>
+            <div class="category-box">Pets</div>
+            <div class="category-box">Tools</div>
+        </div>
+    </div>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 1">
+                
+                <h3>Product 1</h3>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact us: info@Dionz.com | Phone: +123-456-7890</p>
+            <div class="social-media">
+                <a href="https://web.facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+            <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+    
+    <div id="cartModal" class="modal">
+        <div class="cart-modal-content">
+            <span class="close" id="closeCart">&times;</span>
+            <h2>Your Cart</h2>
+            <p>No items in your cart.</p>
+        </div>
+    </div>
+
+    <div id="messageModal" class="modal">
+        <div class="message-modal-content">
+            <span class="close" id="closeMessage">&times;</span>
+            <h2>Messages</h2>
+            <p>You have no new messages.</p>
+        </div>
+    </div>
+</body>
+</html>
